@@ -1,9 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:game_bloc/bloc/game_data_bloc.dart';
 import 'package:game_bloc/model/data_model.dart';
+import 'package:game_bloc/routes/custom_router.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 
 class LandingPage extends StatelessWidget {
@@ -41,7 +41,7 @@ class LandingPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
             child: InkWell(
               onTap: () {
-                // context.router.push(GameDetailsRoute(dataModel: dataModel));
+                context.router.push(DetailRoute(dataModel: dataModel));
               },
               child: SizedBox(
                 width: double.infinity,
