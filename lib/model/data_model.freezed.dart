@@ -28,13 +28,13 @@ mixin _$DataModel {
   String get description => throw _privateConstructorUsedError;
   String get instructions => throw _privateConstructorUsedError;
   String get open_giveaway_url => throw _privateConstructorUsedError;
-  String get pubblished_date => throw _privateConstructorUsedError;
+  String get published_date => throw _privateConstructorUsedError;
   String get type => throw _privateConstructorUsedError;
-  String get platform => throw _privateConstructorUsedError;
+  String get platforms => throw _privateConstructorUsedError;
   String get end_date => throw _privateConstructorUsedError;
   int get users => throw _privateConstructorUsedError;
-  int get status => throw _privateConstructorUsedError;
-  int get gamerpower_url => throw _privateConstructorUsedError;
+  String get status => throw _privateConstructorUsedError;
+  String get gamerpower_url => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -56,13 +56,13 @@ abstract class $DataModelCopyWith<$Res> {
       String description,
       String instructions,
       String open_giveaway_url,
-      String pubblished_date,
+      String published_date,
       String type,
-      String platform,
+      String platforms,
       String end_date,
       int users,
-      int status,
-      int gamerpower_url});
+      String status,
+      String gamerpower_url});
 }
 
 /// @nodoc
@@ -86,9 +86,9 @@ class _$DataModelCopyWithImpl<$Res, $Val extends DataModel>
     Object? description = null,
     Object? instructions = null,
     Object? open_giveaway_url = null,
-    Object? pubblished_date = null,
+    Object? published_date = null,
     Object? type = null,
-    Object? platform = null,
+    Object? platforms = null,
     Object? end_date = null,
     Object? users = null,
     Object? status = null,
@@ -127,17 +127,17 @@ class _$DataModelCopyWithImpl<$Res, $Val extends DataModel>
           ? _value.open_giveaway_url
           : open_giveaway_url // ignore: cast_nullable_to_non_nullable
               as String,
-      pubblished_date: null == pubblished_date
-          ? _value.pubblished_date
-          : pubblished_date // ignore: cast_nullable_to_non_nullable
+      published_date: null == published_date
+          ? _value.published_date
+          : published_date // ignore: cast_nullable_to_non_nullable
               as String,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      platform: null == platform
-          ? _value.platform
-          : platform // ignore: cast_nullable_to_non_nullable
+      platforms: null == platforms
+          ? _value.platforms
+          : platforms // ignore: cast_nullable_to_non_nullable
               as String,
       end_date: null == end_date
           ? _value.end_date
@@ -150,11 +150,11 @@ class _$DataModelCopyWithImpl<$Res, $Val extends DataModel>
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       gamerpower_url: null == gamerpower_url
           ? _value.gamerpower_url
           : gamerpower_url // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
     ) as $Val);
   }
 }
@@ -175,13 +175,13 @@ abstract class _$$_DataModelCopyWith<$Res> implements $DataModelCopyWith<$Res> {
       String description,
       String instructions,
       String open_giveaway_url,
-      String pubblished_date,
+      String published_date,
       String type,
-      String platform,
+      String platforms,
       String end_date,
       int users,
-      int status,
-      int gamerpower_url});
+      String status,
+      String gamerpower_url});
 }
 
 /// @nodoc
@@ -203,9 +203,9 @@ class __$$_DataModelCopyWithImpl<$Res>
     Object? description = null,
     Object? instructions = null,
     Object? open_giveaway_url = null,
-    Object? pubblished_date = null,
+    Object? published_date = null,
     Object? type = null,
-    Object? platform = null,
+    Object? platforms = null,
     Object? end_date = null,
     Object? users = null,
     Object? status = null,
@@ -244,17 +244,17 @@ class __$$_DataModelCopyWithImpl<$Res>
           ? _value.open_giveaway_url
           : open_giveaway_url // ignore: cast_nullable_to_non_nullable
               as String,
-      pubblished_date: null == pubblished_date
-          ? _value.pubblished_date
-          : pubblished_date // ignore: cast_nullable_to_non_nullable
+      published_date: null == published_date
+          ? _value.published_date
+          : published_date // ignore: cast_nullable_to_non_nullable
               as String,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      platform: null == platform
-          ? _value.platform
-          : platform // ignore: cast_nullable_to_non_nullable
+      platforms: null == platforms
+          ? _value.platforms
+          : platforms // ignore: cast_nullable_to_non_nullable
               as String,
       end_date: null == end_date
           ? _value.end_date
@@ -267,11 +267,11 @@ class __$$_DataModelCopyWithImpl<$Res>
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
       gamerpower_url: null == gamerpower_url
           ? _value.gamerpower_url
           : gamerpower_url // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
     ));
   }
 }
@@ -288,9 +288,9 @@ class _$_DataModel implements _DataModel {
       required this.description,
       required this.instructions,
       required this.open_giveaway_url,
-      required this.pubblished_date,
+      required this.published_date,
       required this.type,
-      required this.platform,
+      required this.platforms,
       required this.end_date,
       required this.users,
       required this.status,
@@ -316,23 +316,23 @@ class _$_DataModel implements _DataModel {
   @override
   final String open_giveaway_url;
   @override
-  final String pubblished_date;
+  final String published_date;
   @override
   final String type;
   @override
-  final String platform;
+  final String platforms;
   @override
   final String end_date;
   @override
   final int users;
   @override
-  final int status;
+  final String status;
   @override
-  final int gamerpower_url;
+  final String gamerpower_url;
 
   @override
   String toString() {
-    return 'DataModel(id: $id, title: $title, worth: $worth, thumbnail: $thumbnail, image: $image, description: $description, instructions: $instructions, open_giveaway_url: $open_giveaway_url, pubblished_date: $pubblished_date, type: $type, platform: $platform, end_date: $end_date, users: $users, status: $status, gamerpower_url: $gamerpower_url)';
+    return 'DataModel(id: $id, title: $title, worth: $worth, thumbnail: $thumbnail, image: $image, description: $description, instructions: $instructions, open_giveaway_url: $open_giveaway_url, published_date: $published_date, type: $type, platforms: $platforms, end_date: $end_date, users: $users, status: $status, gamerpower_url: $gamerpower_url)';
   }
 
   @override
@@ -352,11 +352,11 @@ class _$_DataModel implements _DataModel {
                 other.instructions == instructions) &&
             (identical(other.open_giveaway_url, open_giveaway_url) ||
                 other.open_giveaway_url == open_giveaway_url) &&
-            (identical(other.pubblished_date, pubblished_date) ||
-                other.pubblished_date == pubblished_date) &&
+            (identical(other.published_date, published_date) ||
+                other.published_date == published_date) &&
             (identical(other.type, type) || other.type == type) &&
-            (identical(other.platform, platform) ||
-                other.platform == platform) &&
+            (identical(other.platforms, platforms) ||
+                other.platforms == platforms) &&
             (identical(other.end_date, end_date) ||
                 other.end_date == end_date) &&
             (identical(other.users, users) || other.users == users) &&
@@ -377,9 +377,9 @@ class _$_DataModel implements _DataModel {
       description,
       instructions,
       open_giveaway_url,
-      pubblished_date,
+      published_date,
       type,
-      platform,
+      platforms,
       end_date,
       users,
       status,
@@ -409,13 +409,13 @@ abstract class _DataModel implements DataModel {
       required final String description,
       required final String instructions,
       required final String open_giveaway_url,
-      required final String pubblished_date,
+      required final String published_date,
       required final String type,
-      required final String platform,
+      required final String platforms,
       required final String end_date,
       required final int users,
-      required final int status,
-      required final int gamerpower_url}) = _$_DataModel;
+      required final String status,
+      required final String gamerpower_url}) = _$_DataModel;
 
   factory _DataModel.fromJson(Map<String, dynamic> json) =
       _$_DataModel.fromJson;
@@ -437,19 +437,19 @@ abstract class _DataModel implements DataModel {
   @override
   String get open_giveaway_url;
   @override
-  String get pubblished_date;
+  String get published_date;
   @override
   String get type;
   @override
-  String get platform;
+  String get platforms;
   @override
   String get end_date;
   @override
   int get users;
   @override
-  int get status;
+  String get status;
   @override
-  int get gamerpower_url;
+  String get gamerpower_url;
   @override
   @JsonKey(ignore: true)
   _$$_DataModelCopyWith<_$_DataModel> get copyWith =>
