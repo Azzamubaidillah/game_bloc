@@ -40,7 +40,9 @@ class LandingPage extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                // context.router.push(GameDetailsRoute(dataModel: dataModel));
+              },
               child: SizedBox(
                 width: double.infinity,
                 child: Stack(
